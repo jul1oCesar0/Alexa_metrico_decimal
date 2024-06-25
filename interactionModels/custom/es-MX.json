@@ -1,0 +1,164 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "slots": [
+            {
+              "name": "Value",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "FromUnit",
+              "type": "FromUnit"
+            },
+            {
+              "name": "ToUnit",
+              "type": "ToUnit"
+            }
+          ],
+          "name": "ConvertUnitIntent",
+          "samples": [
+            "convierte {Value} {FromUnit} a {ToUnit}",
+            "convierte {Value} {FromUnit} en {ToUnit}",
+            "cambia {Value} {FromUnit} a {ToUnit}",
+            "cambia {Value} {FromUnit} en {ToUnit}"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "ayuda",
+            "puedes ayudarme",
+            "necesito ayuda",
+            "qué puedo hacer"
+          ]
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+            "cancelar",
+            "olvídalo",
+            "no importa"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "parar",
+            "detener",
+            "salir",
+            "terminar"
+          ]
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": [
+            "no entiendo",
+            "no entendí eso",
+            "repite eso",
+            "puedes repetir eso",
+            "qué dijiste"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "SMD"
+              }
+            },
+            {
+              "name": {
+                "value": "Cm"
+              }
+            },
+            {
+              "name": {
+                "value": "Mtrs"
+              }
+            },
+            {
+              "name": {
+                "value": "Km"
+              }
+            },
+            {
+              "name": {
+                "value": "SMI"
+              }
+            },
+            {
+              "name": {
+                "value": "Yardas"
+              }
+            },
+            {
+              "name": {
+                "value": "Pulgadas"
+              }
+            },
+            {
+              "name": {
+                "value": "Pies"
+              }
+            }
+          ],
+          "name": "FromUnit"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "SMD"
+              }
+            },
+            {
+              "name": {
+                "value": "Cm"
+              }
+            },
+            {
+              "name": {
+                "value": "Mtrs"
+              }
+            },
+            {
+              "name": {
+                "value": "Km"
+              }
+            },
+            {
+              "name": {
+                "value": "SMI"
+              }
+            },
+            {
+              "name": {
+                "value": "Yardas"
+              }
+            },
+            {
+              "name": {
+                "value": "Pulgadas"
+              }
+            },
+            {
+              "name": {
+                "value": "Pies"
+              }
+            }
+          ],
+          "name": "ToUnit"
+        }
+      ],
+      "invocationName": "conversor unidades"
+    }
+  }
+}

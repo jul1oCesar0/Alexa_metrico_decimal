@@ -1,0 +1,187 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "slots": [
+            {
+              "name": "Value",
+              "type": "AMAZON.NUMBER"
+            },
+            {
+              "name": "FromUnit",
+              "type": "FromUnit"
+            },
+            {
+              "name": "ToUnit",
+              "type": "ToUnit"
+            }
+          ],
+          "name": "ConvertUnitIntent",
+          "samples": [
+            "convert {Value} {FromUnit} to {ToUnit}",
+            "convert {Value} {FromUnit} into {ToUnit}",
+            "change {Value} {FromUnit} to {ToUnit}",
+            "change {Value} {FromUnit} into {ToUnit}",
+            "I want to convert {Value} {FromUnit} to {ToUnit}",
+            "how do you convert {Value} {FromUnit} to {ToUnit}",
+            "{Value} {FromUnit} to {ToUnit}",
+            "transform {Value} {FromUnit} to {ToUnit}",
+            "can you convert {Value} {FromUnit} to {ToUnit}",
+            "help me convert {Value} {FromUnit} to {ToUnit}"
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "help",
+            "can you help me",
+            "I need help",
+            "what can I do",
+            "how does this work",
+            "give me instructions",
+            "help me please",
+            "how do I use this"
+          ]
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+            "cancel",
+            "never mind",
+            "forget it",
+            "stop this",
+            "cancel this",
+            "stop",
+            "end this",
+            "stop doing this"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+            "stop",
+            "quit",
+            "exit",
+            "end",
+            "stop it",
+            "stop this",
+            "end this",
+            "finalize"
+          ]
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": [
+            "I don\u0027t understand",
+            "I didn\u0027t get that",
+            "say that again",
+            "can you repeat that",
+            "what did you say",
+            "I don\u0027t know what you mean",
+            "I don\u0027t know that",
+            "I didn\u0027t catch that",
+            "I didn\u0027t understand"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "SMD"
+              }
+            },
+            {
+              "name": {
+                "value": "Cm"
+              }
+            },
+            {
+              "name": {
+                "value": "Mtrs"
+              }
+            },
+            {
+              "name": {
+                "value": "Km"
+              }
+            },
+            {
+              "name": {
+                "value": "SMI"
+              }
+            },
+            {
+              "name": {
+                "value": "Yardas"
+              }
+            },
+            {
+              "name": {
+                "value": "Pulgadas"
+              }
+            },
+            {
+              "name": {
+                "value": "Pies"
+              }
+            }
+          ],
+          "name": "FromUnit"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "SMD"
+              }
+            },
+            {
+              "name": {
+                "value": "Cm"
+              }
+            },
+            {
+              "name": {
+                "value": "Mtrs"
+              }
+            },
+            {
+              "name": {
+                "value": "Km"
+              }
+            },
+            {
+              "name": {
+                "value": "SMI"
+              }
+            },
+            {
+              "name": {
+                "value": "Yardas"
+              }
+            },
+            {
+              "name": {
+                "value": "Pulgadas"
+              }
+            },
+            {
+              "name": {
+                "value": "Pies"
+              }
+            }
+          ],
+          "name": "ToUnit"
+        }
+      ],
+      "invocationName": "unit converter"
+    }
+  }
+}
